@@ -1,0 +1,10 @@
+{% extends "basic_app/base.html" %} {% block body_block %}
+<div class="jumbotron">
+    <h1>Django Level Five</h1>
+    {% if user.is_authenticated %}
+    <h1>Logged in</h1>
+    {% else %}
+    <h1>Please log in</h1>
+    {% endif %}
+</div>
+{% endblock %}
